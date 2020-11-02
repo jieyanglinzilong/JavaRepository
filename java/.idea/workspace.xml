@@ -2,51 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b45a1c-064b-4840-b745-81fb4f8c8255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/adpater/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/object/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/设计模式2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/Decorate/decorator/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/proxy/proxy1/run_main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/组合模式/ComponentDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/组合模式/zuhe01/PayDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/门面模式/facade1/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/Man.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/ManBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/PersonBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/PersonDirector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/Test2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/Woman.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/WomanBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/one/Man.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/one/ManBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/Build/one/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/AbstractFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/Aircondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/AirconditionA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/AirconditionB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/Engine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/EngineA.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/EngineB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/FactoryBMW320.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/FactoryBMW523.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/absfatory/abstart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/clone/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/clone/ConcretePrototype.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/clone/Prototype.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/BMW.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/BMW320.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/BMW523.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/FactoryBMW.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/FactoryBMW320.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/FactoryBMW523.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/fatory/fatory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/single/Singleton$LazyHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/single/Singleton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/com/company/single/Singleton1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Build/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/Build/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Build/one/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/Build/one/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/absfatory/abstart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/abstart/abstart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/clone/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/clone/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/fatory/fatory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/fatory/fatory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/single/Singleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/single/Singleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/single/Singleton1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/create/absfatory/single/Singleton1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/设计模式2.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +46,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Client (2)">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.adpater.Client" />
+  <component name="RunManager" selected="Application.PayDemo">
+    <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.门面模式.facade1.Client" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.jiegou.adpater.*" />
+          <option name="PATTERN" value="com.company.jiegou.门面模式.facade1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,12 +60,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.object.Client" />
+    <configuration name="ComponentDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.组合模式.ComponentDemo" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.jiegou.object.*" />
+          <option name="PATTERN" value="com.company.jiegou.组合模式.zuhe01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.create.absfatory.clone.Client" />
+    <configuration name="PayDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.组合模式.zuhe01.PayDemo" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.create.absfatory.clone.*" />
+          <option name="PATTERN" value="com.company.jiegou.组合模式.zuhe01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +86,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.create.absfatory.Build.one.Test" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.Decorate.decorator.Test" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.create.absfatory.Build.one.*" />
+          <option name="PATTERN" value="com.company.jiegou.Decorate.decorator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.create.absfatory.Build.Test2" />
+    <configuration name="run_main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.jiegou.proxy.proxy1.run_main" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.create.absfatory.Build.*" />
+          <option name="PATTERN" value="com.company.jiegou.proxy.proxy1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,19 +113,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
-      <item itemvalue="Application.Test2" />
-      <item itemvalue="Application.Client" />
-      <item itemvalue="Application.Client (1)" />
-      <item itemvalue="Application.Client (2)" />
+      <item itemvalue="Application.Test (1)" />
+      <item itemvalue="Application.run_main" />
+      <item itemvalue="Application.Client (3)" />
+      <item itemvalue="Application.ComponentDemo" />
+      <item itemvalue="Application.PayDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client (2)" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.PayDemo" />
+        <item itemvalue="Application.ComponentDemo" />
+        <item itemvalue="Application.Client (3)" />
+        <item itemvalue="Application.run_main" />
+        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -179,6 +141,7 @@
       <updated>1604148764752</updated>
       <workItem from="1604148769626" duration="7176000" />
       <workItem from="1604199915847" duration="2228000" />
+      <workItem from="1604293066192" duration="3849000" />
     </task>
     <servers />
   </component>
@@ -190,26 +153,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604201388190" />
-    <state x="583" y="168" key="FileChooserDialogImpl" timestamp="1604153780415">
+    <state x="583" y="168" key="FileChooserDialogImpl" timestamp="1604293526466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="583" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604153780415" />
-    <state width="746" height="196" key="GridCell.Tab.0.bottom" timestamp="1604202170617">
+    <state x="583" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604293526466" />
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1604296950023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604202170617" />
-    <state width="746" height="196" key="GridCell.Tab.0.center" timestamp="1604202170617">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604296950023" />
+    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1604296950023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604202170617" />
-    <state width="746" height="196" key="GridCell.Tab.0.left" timestamp="1604202170617">
+    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604296950023" />
+    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1604296950023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604202170617" />
-    <state width="746" height="196" key="GridCell.Tab.0.right" timestamp="1604202170617">
+    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604296950023" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1604296950023">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604202170617" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604296950023" />
     <state width="746" height="261" key="GridCell.Tab.1.bottom" timestamp="1604202170615">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -230,13 +193,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604153747238" />
-    <state x="445" y="259" width="715" height="489" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1604153784104">
+    <state x="445" y="258" width="715" height="566" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1604293529730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="445" y="259" width="715" height="489" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1604153784104" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604153765953">
+    <state x="445" y="258" width="715" height="566" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1536.824@0.0.1536.824" timestamp="1604293529730" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604293484343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604153765953" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604293484343" />
   </component>
 </project>
