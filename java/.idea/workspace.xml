@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8b45a1c-064b-4840-b745-81fb4f8c8255" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/Decorate/decorator/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/proxy/proxy1/run_main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/组合模式/ComponentDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/组合模式/zuhe01/PayDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/jiegou/门面模式/facade1/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/设计模式2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/设计模式2.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +37,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -142,11 +138,16 @@
       <workItem from="1604148769626" duration="7176000" />
       <workItem from="1604199915847" duration="2228000" />
       <workItem from="1604293066192" duration="3849000" />
+      <workItem from="1604305359628" duration="81000" />
+      <workItem from="1604465793326" duration="1476000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1604201388190">
