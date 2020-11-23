@@ -52,7 +52,7 @@ public class Main {
         FileSystem fs = FileSystem.get(new URI("hdfs://hadoop1001:9000"), configuration, "lin");
         fs.rename(new Path("/user/2009.txt"),new Path("/user/20090.txt"));
 
-        // 3 关闭资源
+       
         fs.close();
 
         System.out.println("over");
