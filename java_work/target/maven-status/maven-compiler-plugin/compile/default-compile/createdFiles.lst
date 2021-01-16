@@ -1,0 +1,6 @@
+com\example\dao\Factorydao.class
+com\example\service\impl\factoryserviceimpl.class
+com\example\service\factoryservice.class
+com\example\test\test2.class
+com\example\domin\Factory.class
+com\example\pageinstoer\Page.class

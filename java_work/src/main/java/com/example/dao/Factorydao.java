@@ -1,4 +1,9 @@
 package com.example.dao;
 
-public interface Factorydao <T> {
+import com.example.domin.Factory;
+
+import java.util.List;
+
+public interface Factorydao  {
+    List<Factory> findAll();
 }
