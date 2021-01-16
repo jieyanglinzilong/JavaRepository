@@ -657,33 +657,6 @@ function textareasizeNew(obj,length) {
 	}
 }
 
-/*设置普通输入框鼠标样式事件，排除带有特殊图标的输入框，如日期等。排除选择框等INPUT
-	2008.11.25 by Vicco
-*/
-function reInput(){
-	var inputs = document.getElementsByTagName('input');
-	 for(i = 0; i < inputs.length; i++){
-	 	if(inputs[i].type != "checkbox" && inputs[i].type != "radio" && inputs[i].className != "hand_date" && inputs[i].className != "hand" && inputs[i].className != "hand_choose" && inputs[i].type != "button" && inputs[i].dataType != "复选框" && inputs[i].name != "addDept_txt" && inputs[i].id != "percent"){
-	 		inputs[i].onfocus = function(){this.style.border="1px solid #208073";this.style.background="#edfaf9"}; //激活事件边框与背景
-	 		inputs[i].onblur = function(){this.style.background="#fff"}; //非激活背景
-	 		inputs[i].onmouseover = function(){this.style.border="1px solid #e2994a"}; // 鼠标事件
-	 		inputs[i].onmouseout = function(){this.style.border="1px solid #369e92"};
-	 		}else if(inputs[i].className == "hand_date" || inputs[i].className == "hand_choose"){
-		 		inputs[i].onmousedown = function(){this.style.border="1px solid #208073"}; //激活事件边框与背景
-		 		inputs[i].onmouseover = function(){this.style.border="1px solid #e2994a"}; // 鼠标事件
-		 		inputs[i].onmouseout = function(){this.style.border="1px solid #369e92"};
-	 		}
- 		}
- 	var textArea = document.getElementsByTagName('textarea');
-		 for(i = 0; i < textArea.length; i++){
-		 	if(textArea[i].id.indexOf("textarea") != -1){
-		 		textArea[i].onfocus = function(){this.style.border="1px solid #208073"}; //激活事件边框与背景
-		 		textArea[i].onmouseover = function(){this.style.border="1px solid #e2994a"}; // 鼠标事件
-		 		textArea[i].onmouseout = function(){this.style.border="1px solid #369e92"};
-		 	}
-		 }
-	}
-	
 /*  设置隐藏层
 	objMain: 	设置隐藏层ID； PS:  test1
 	objss :  	设置未隐藏后DIV ID； PS:  test_visibility1 比如点击后为 -
@@ -1629,33 +1602,6 @@ function delHtmlTag(str) {
 	}
 */
 
-	    
-function delFile(fileId, obj){
-	var result = confirm("是否删除此文件，删除后不可恢复？");
-	if (result) {
-		var ajax = Ext.Ajax;
-		ajax.request({	url:  "../common/deleteUploadFileAction.do",
-						params:{id:fileId},
-						method:"post", 
-						success:function(response, options){
-									//alert(response.responseText == "");
-									showError("成功删除该文件!");
-									if(response.responseText == "") {
-										$(obj).parent().remove();
-									}
-								}
-					});
-	} else {
-		return false;
-	}
-}	
-
-/* add by tony reason:使用下载类，中文参数的先转码 */
-function downFile(fileName){
-	var fileName = encodeURI((fileName)); 
-	document.forms[0].sFile.value = fileName;	//页面必须有这个hidden框
-	formSubmit('/common/downloadFileAction.do?sFile='+document.forms[0].sFile.value + '&sPath=' + document.forms[0].sPath.value,'_self');
-}
 
 /* add by tony reason:返回文件名 */
 function getFileName( fileName ){
@@ -1673,6 +1619,33 @@ function getExtName( fileName ){
    }catch(e){
 	    return "";
    }
+}
+
+/*设置普通输入框鼠标样式事件，排除带有特殊图标的输入框，如日期等。排除选择框等INPUT
+2008.11.25 by Vicco
+*/
+function reInput(){
+var inputs = document.getElementsByTagName('input');
+ for(i = 0; i < inputs.length; i++){
+ 	if(inputs[i].type != "checkbox" && inputs[i].type != "radio" && inputs[i].className != "hand_date" && inputs[i].className != "hand" && inputs[i].className != "hand_choose" && inputs[i].type != "button" && inputs[i].dataType != "复选框" && inputs[i].name != "addDept_txt" && inputs[i].id != "percent"){
+ 		inputs[i].onfocus = function(){this.style.border="1px solid #208073";this.style.background="#edfaf9"}; //激活事件边框与背景
+ 		inputs[i].onblur = function(){this.style.background="#fff"}; //非激活背景
+ 		inputs[i].onmouseover = function(){this.style.border="1px solid #e2994a"}; // 鼠标事件
+ 		inputs[i].onmouseout = function(){this.style.border="1px solid #369e92"};
+ 		}else if(inputs[i].className == "hand_date" || inputs[i].className == "hand_choose"){
+	 		inputs[i].onmousedown = function(){this.style.border="1px solid #208073"}; //激活事件边框与背景
+	 		inputs[i].onmouseover = function(){this.style.border="1px solid #e2994a"}; // 鼠标事件
+	 		inputs[i].onmouseout = function(){this.style.border="1px solid #369e92"};
+ 		}
+		}
+	var textArea = document.getElementsByTagName('textarea');
+	 for(i = 0; i < textArea.length; i++){
+	 	if(textArea[i].id.indexOf("textarea") != -1){
+	 		textArea[i].onfocus = function(){this.style.border="1px solid #208073"}; //激活事件边框与背景
+	 		textArea[i].onmouseover = function(){this.style.border="1px solid #e2994a"}; // 鼠标事件
+	 		textArea[i].onmouseout = function(){this.style.border="1px solid #369e92"};
+	 	}
+	 }
 }
 
 /*系统加载input样式*/
