@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.dao.Userdao">
+    <resultMap id="baseResultMap" type="com.example.domin.User">
+        <id column="user_id" property="userId" javaType="java.lang.String"></id>
+        <result column="dept_id" property="deptId" javaType="java.lang.String"></result>
+        <result column="business_position_id" property="businessPositionId" javaType="java.lang.String"></result>
+        <result column="name" property="name" javaType="java.lang.String"></result>
+        <result column="password" property="password" javaType="java.lang.String"></result>
+        <result column="py_code" property="pyCode" javaType="java.lang.String"></result>
+        <result column="real_name" property="realName" javaType="java.lang.String"></result>
+        <result column="position" property="position" javaType="java.lang.String"></result>
+        <result column="duty_dept" property="dutyDept" javaType="java.lang.String"></result>
+        <result column="duty_level" property="dutyLevel" javaType="java.lang.String"></result>
+        <result column="user_level" property="userLevel" javaType="java.lang.Integer"></result>
+        <result column="cnote" property="cnote" javaType="java.lang.String"></result>
+        <result column="is_change_pass" property="isChangePass" javaType="java.lang.String"></result>
+        <result column="is_online" property="isOnline" javaType="java.lang.String"></result>
+        <result column="cur_station" property="curStation" javaType="java.lang.String"></result>
+        <result column="order_no" property="orderNo" javaType="java.lang.String"></result>
+        <result column="login_num" property="loginNum" javaType="java.lang.Integer"></result>
+        <result column="login_time" property="loginTime" javaType="java.util.Date"></result>
+        <result column="realp" property="realp" javaType="java.lang.String"></result>
+        <result column="super_user" property="superUser" javaType="java.lang.Integer"></result>
+        <result column="mobile" property="mobile" javaType="java.lang.String"></result>
+        <result column="telephone" property="telephone" javaType="java.lang.String"></result>
+        <result column="is_send_sms" property="isSendSms" javaType="java.lang.String"></result>
+    </resultMap>
+    <select id="login" resultMap="baseResultMap" parameterType="String">
+        select * from user_p where name=#{name}
+    </select>
+    <!--
+    private String userId;
+    private String deptId;
+    private String businessPositionId;
+    private String name;
+    private String password;
+    private String pyCode;
+    private String realName;
+    private String position;
+    private String dutyDept;
+    private String dutyLevel;
+    private Integer userLevel;
+    private String cnote;
+    private String isUse;
+    private String isChangePass;
+    private String isOnline;
+    private String curStation;
+    private String orderNo;
+    private Integer loginNum;
+    private Date loginTime;
+    private String realp;
+    private Integer superUser;
+    private String mobile;
+    private String telephone;
+    private String isSendSms;
+    -->
+</mapper>

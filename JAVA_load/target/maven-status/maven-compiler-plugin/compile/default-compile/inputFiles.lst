@@ -1,6 +1,13 @@
 D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\dao\Factorydao.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\dao\Userdao.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\controller\FactoryController.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\Page\PageInterceptor.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\controller\UserController.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\service\UserService.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\test\Test1.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\Page\Page.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\domin\User.java
 D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\service\FactoryService.java
 D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\service\impl\FactoryServiceimpl.java
-D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\controller\FactoryController.java
+D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\service\impl\UserServiceimpl.java
 D:\JAVA_reporitory\JAVA_load\src\main\java\com\example\domin\Factory.java
-D:\JAVA_reporitory\JAVA_load\src\main\java\test\Test1.java

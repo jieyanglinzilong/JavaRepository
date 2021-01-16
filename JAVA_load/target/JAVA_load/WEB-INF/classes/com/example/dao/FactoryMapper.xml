@@ -25,4 +25,9 @@
         <include refid="Base_Column_List"/>
         from factory_c
     </select>
+    <select id="findPage" parameterType="com.example.Page.Page" resultMap="baseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from factory_c
+    </select>
 </mapper>
