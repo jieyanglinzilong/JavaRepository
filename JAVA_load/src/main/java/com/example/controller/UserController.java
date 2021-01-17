@@ -17,7 +17,7 @@ public class UserController {
         //return "/basicinfo/factory/jFactoryList.jsp";			//首页，删除根目录下index.jsp，否则上面url将被拦截进不来
         //return "/home/fmain.jsp";
         //return "redirect:sysadminMain.action";
-        return  "/index.jsp";
+        return  "/login.jsp";
     }
     @RequestMapping(value="/fmain.action")
     public String fmain(){
@@ -57,6 +57,7 @@ public class UserController {
         //2.普通用户：/home/fmain.jsp
         //3.用户名密码出错：/index.jsp
         User user=userService.UserLogin(userName,password);
+        System.out.println(userName +" "+password);
         if(user.getUserId().equals("-1")||user.getUserId().equals("-2")){
             return "/index.jsp";
         }else {

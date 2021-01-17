@@ -3,6 +3,8 @@ package com.jk.domain;
 
 public class Factory {
 
+
+
     /**
      * 字段属性
      */
@@ -16,6 +18,7 @@ public class Factory {
     private String cnote;
     private String inspector;
     private Integer orderNo;
+    private Integer state;
     private String createBy;
     private String createDept;
     private String createTime;
@@ -82,6 +85,13 @@ public class Factory {
         return cnote;
     }
 
+    public Integer getState() {
+        return state;
+    }
+
+    public void setState(Integer state) {
+        this.state = state;
+    }
     public void setCnote(String cnote) {
         this.cnote = cnote;
     }
@@ -154,5 +164,22 @@ public class Factory {
     public Factory(String factoryId,  String factoryName) {
         this.factoryId = factoryId;
         this.factoryName = factoryName;
+    }
+
+    public Factory(String factoryId, String fullName, String factoryName, String contacts, String phone, String mobile, String fax, String cnote, String inspector, Integer orderNo, Integer state, String createBy, String createDept, String createTime) {
+        this.factoryId = factoryId;
+        this.fullName = fullName;
+        this.factoryName = factoryName;
+        this.contacts = contacts;
+        this.phone = phone;
+        this.mobile = mobile;
+        this.fax = fax;
+        this.cnote = cnote;
+        this.inspector = inspector;
+        this.orderNo = orderNo;
+        this.state = state;
+        this.createBy = createBy;
+        this.createDept = createDept;
+        this.createTime = createTime;
     }
 }

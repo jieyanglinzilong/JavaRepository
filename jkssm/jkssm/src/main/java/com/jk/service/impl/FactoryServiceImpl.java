@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
+import java.util.UUID;
 
 @Service
 public class FactoryServiceImpl implements FactoryService {
@@ -26,5 +27,12 @@ public class FactoryServiceImpl implements FactoryService {
     @Override
     public List<Factory> find(Map map) {
         return factoryDao.find(map);
+    }
+
+    @Override
+    public void add(Factory factory) {
+        //保存时先生成UUID
+        factory.setFactoryId(UUID.randomUUID().toString());
+        factoryDao.insert(factory);
     }
 }

@@ -89,26 +89,26 @@ public class Page<T> {
         sBuf.append("<a href=\"").append(url).append("?pageNo=1");
         sBuf.append("\">[首页]");
         sBuf.append("</a>&nbsp;");
-
-        sBuf.append("<a href=\"").append(url).append("?pageNo=");
-        if (pageNo <= 1) {
-            sBuf.append(1);
-        } else {
-            sBuf.append(pageNo - 1);
+        if(pageNo>1) {
+            sBuf.append("<a href=\"").append(url).append("?pageNo=");
+            if (pageNo <= 1) {
+                sBuf.append(1);
+            } else {
+                sBuf.append(pageNo - 1);
+            }
+            sBuf.append("\">[上一页]");
+            sBuf.append("</a>&nbsp;");
         }
-        sBuf.append("\">[上一页]");
-        sBuf.append("</a>&nbsp;");
-
-
-        sBuf.append("<a href=\"").append(url).append("?pageNo=");
-        if (pageNo >= endPage) {
-            sBuf.append(endPage);
-        } else {
-            sBuf.append(pageNo + 1);
+        if(pageNo<endPage) {
+            sBuf.append("<a href=\"").append(url).append("?pageNo=");
+            if (pageNo >= endPage) {
+                sBuf.append(endPage);
+            } else {
+                sBuf.append(pageNo + 1);
+            }
+            sBuf.append("\">[下一页]");
+            sBuf.append("</a>&nbsp;");
         }
-        sBuf.append("\">[下一页]");
-        sBuf.append("</a>&nbsp;");
-
         sBuf.append("<a href=\"").append(url).append("?pageNo=").append(endPage);
         sBuf.append("\">[末页]");
         sBuf.append("</a>&nbsp;");

@@ -12,7 +12,8 @@
         <result column="fax" property="fax" javaType="java.lang.String"></result>
         <result column="cnote" property="cnote" javaType="java.lang.String"></result>
         <result column="inspector" property="inspector" javaType="java.lang.String"></result>
-        <result column="order_no" property="orderNo" javaType="java.lang.String"></result>
+        <result column="order_no" property="orderNo" javaType="java.lang.Integer"></result>
+        <result column="state" property="state" javaType="java.lang.Integer"></result>
         <result column="create_by" property="createBy" javaType="java.lang.String"></result>
         <result column="create_dept" property="createDept" javaType="java.lang.String"></result>
         <result column="create_time" property="createTime" javaType="java.lang.String"></result>
@@ -101,7 +102,7 @@
 		insert into factory_c
 		(FACTORY_ID,FULL_NAME,FACTORY_NAME,CONTACTS,PHONE,MOBILE,FAX,CNOTE,INSPECTOR,ORDER_NO,STATE,CREATE_BY,CREATE_DEPT,CREATE_TIME)
 		values
-		(	#{id},
+		(	#{factoryId, jdbcType=VARCHAR},
 			#{fullName, jdbcType=VARCHAR},
 			#{factoryName, jdbcType=VARCHAR},
 			#{contacts, jdbcType=VARCHAR},

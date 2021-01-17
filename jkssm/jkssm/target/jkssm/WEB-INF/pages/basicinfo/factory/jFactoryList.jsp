@@ -13,7 +13,7 @@
 <div id="innerMenubar">
   <div id="navMenubar">
 <ul>
-<li id="view"><a href="#" onclick="formSubmit('toview.action','_self');this.blur();">查看</a></li>
+<li id="view"><a href="/jkssm/basicinfo/factory/list.action?pageNo=${page.pageNo}" onclick="formSubmit('toview.action','_self');this.blur();">查看</a></li>
 <li id="new"><a href="#" onclick="formSubmit('tocreate.action','_self');this.blur();">新增</a></li>
 <li id="update"><a href="#" onclick="formSubmit('toupdate.action','_self');this.blur();">修改</a></li>
 <li id="delete"><a href="#" onclick="formSubmit('deleteById.action','_self');this.blur();">删除</a></li>
@@ -54,12 +54,11 @@
 	</tr>
 	</thead>
 	<tbody class="tableBody" >
-	
-	<c:forEach items="${dataList}" var="o" varStatus="status">
+	<c:forEach items="${page.results}" var="o" varStatus="status">
 	<tr class="odd" onmouseover="this.className='highlight'" onmouseout="this.className='odd'" >
-		<td><input type="checkbox" name="id" value="${o.id}"/></td>
+		<td><input type="checkbox" name="id" value="${o.factoryId}"/></td>
 		<td>${status.index+1}</td>
-		<td><a href="toview.action?id=${o.id}">${o.fullName}</a></td>
+		<td><a href="toview.action?id=${o.factoryId}">${o.fullName}</a></td>
 		<td>${o.factoryName}</td>
 		<td>${o.contacts}</td>
 		<td>${o.phone}</td>
@@ -67,14 +66,14 @@
 		<td>${o.fax}</td>
 		<td>${o.inspector}</td>
 		<td>
-			<c:if test="${o.state==1}"><a href="stop.action?id=${o.id}"><font color="green">启用</font></a></c:if>
-			<c:if test="${o.state==0}"><a href="start.action?id=${o.id}">停用</a></c:if>
+			<c:if test="${o.state==1}"><a href="stop.action?id=${o.factoryId}"><font color="green">启用</font></a></c:if>
+			<c:if test="${o.state==0}"><a href="start.action?id=${o.factoryId}">停用</a></c:if>
 		</td>
 	</tr>
 	</c:forEach>
-	
 	</tbody>
 </table>
+	<span>${page.pageLinks("/jkssm/basicinfo/factory/list.action")}</span>
 </div>
  
 </div>

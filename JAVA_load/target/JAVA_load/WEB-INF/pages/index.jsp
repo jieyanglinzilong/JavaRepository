@@ -24,7 +24,7 @@
 				 title="请您输入密码"/></div>
 		  </div>
 			<div class="dl">
-				<input  class="loginImgOut" value="" type="button" onclick="formSubmit('/jkssm/login.action','_self');"
+				<input  class="loginImgOut" value="" type="button" onclick="formSubmit('login.action','_self');"
 				  onmouseover="this.className='loginImgOver'" 
 				  onmouseout="this.className='loginImgOut'"
 				/>

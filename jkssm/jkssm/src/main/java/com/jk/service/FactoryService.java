@@ -13,5 +13,6 @@ public interface FactoryService {
 
     public Page findPage(Page page);
     public List<Factory> find(Map map);
+    public void add(Factory factory);
 
 }

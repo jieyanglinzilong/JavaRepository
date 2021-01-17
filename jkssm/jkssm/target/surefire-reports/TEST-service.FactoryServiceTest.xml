@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="service.FactoryServiceTest" time="1.76" tests="2" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="G:\hs2021\code\jkssm\target\test-classes;G:\hs2021\code\jkssm\target\classes;D:\Program Files\maven3\repository\org\springframework\spring-webmvc\3.2.6.RELEASE\spring-webmvc-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-beans\3.2.6.RELEASE\spring-beans-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-context\3.2.6.RELEASE\spring-context-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-aop\3.2.6.RELEASE\spring-aop-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-core\3.2.6.RELEASE\spring-core-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\Program Files\maven3\repository\org\springframework\spring-expression\3.2.6.RELEASE\spring-expression-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-web\3.2.6.RELEASE\spring-web-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-orm\3.2.6.RELEASE\spring-orm-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Program Files\maven3\repository\org\springframework\spring-jdbc\3.2.6.RELEASE\spring-jdbc-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-tx\3.2.6.RELEASE\spring-tx-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-test\3.2.6.RELEASE\spring-test-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\aspectj\aspectjweaver\1.7.2\aspectjweaver-1.7.2.jar;D:\Program Files\maven3\repository\org\mybatis\mybatis\3.2.2\mybatis-3.2.2.jar;D:\Program Files\maven3\repository\org\mybatis\mybatis-spring\1.2.0\mybatis-spring-1.2.0.jar;D:\Program Files\maven3\repository\com\alibaba\druid\1.1.6\druid-1.1.6.jar;D:\Program Files\maven3\repository\mysql\mysql-connector-java\5.1.10\mysql-connector-java-5.1.10.jar;D:\Program Files\maven3\repository\junit\junit\4.11\junit-4.11.jar;D:\Program Files\maven3\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Program Files\maven3\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;D:\Program Files\maven3\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;D:\Program Files\maven3\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;D:\Program Files\maven3\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;D:\Program Files\maven3\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;D:\Program Files\maven3\repository\javax\servlet\jsp\jstl\jstl-api\1.2\jstl-api-1.2.jar;D:\Program Files\maven3\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;D:\Program Files\maven3\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;D:\Program Files\maven3\repository\org\glassfish\web\jstl-impl\1.2\jstl-impl-1.2.jar;D:\Program Files\maven3\repository\jexcelapi\jxl\2.4.2\jxl-2.4.2.jar;D:\Program Files\maven3\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\DongFufa\AppData\Local\Temp\surefire8703107032520149099\surefirebooter7007412668755734973.jar C:\Users\DongFufa\AppData\Local\Temp\surefire8703107032520149099 2021-01-16T17-39-29_908-jvmRun1 surefire1534549417390807411tmp surefire_07091689051872955676tmp"/>
+    <property name="surefire.test.class.path" value="G:\hs2021\code\jkssm\target\test-classes;G:\hs2021\code\jkssm\target\classes;D:\Program Files\maven3\repository\org\springframework\spring-webmvc\3.2.6.RELEASE\spring-webmvc-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-beans\3.2.6.RELEASE\spring-beans-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-context\3.2.6.RELEASE\spring-context-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-aop\3.2.6.RELEASE\spring-aop-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-core\3.2.6.RELEASE\spring-core-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;D:\Program Files\maven3\repository\org\springframework\spring-expression\3.2.6.RELEASE\spring-expression-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-web\3.2.6.RELEASE\spring-web-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-orm\3.2.6.RELEASE\spring-orm-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;D:\Program Files\maven3\repository\org\springframework\spring-jdbc\3.2.6.RELEASE\spring-jdbc-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-tx\3.2.6.RELEASE\spring-tx-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\springframework\spring-test\3.2.6.RELEASE\spring-test-3.2.6.RELEASE.jar;D:\Program Files\maven3\repository\org\aspectj\aspectjweaver\1.7.2\aspectjweaver-1.7.2.jar;D:\Program Files\maven3\repository\org\mybatis\mybatis\3.2.2\mybatis-3.2.2.jar;D:\Program Files\maven3\repository\org\mybatis\mybatis-spring\1.2.0\mybatis-spring-1.2.0.jar;D:\Program Files\maven3\repository\com\alibaba\druid\1.1.6\druid-1.1.6.jar;D:\Program Files\maven3\repository\mysql\mysql-connector-java\5.1.10\mysql-connector-java-5.1.10.jar;D:\Program Files\maven3\repository\junit\junit\4.11\junit-4.11.jar;D:\Program Files\maven3\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\Program Files\maven3\repository\log4j\log4j\1.2.13\log4j-1.2.13.jar;D:\Program Files\maven3\repository\org\slf4j\slf4j-log4j12\1.7.5\slf4j-log4j12-1.7.5.jar;D:\Program Files\maven3\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;D:\Program Files\maven3\repository\commons-fileupload\commons-fileupload\1.2.2\commons-fileupload-1.2.2.jar;D:\Program Files\maven3\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;D:\Program Files\maven3\repository\javax\servlet\jsp\jstl\jstl-api\1.2\jstl-api-1.2.jar;D:\Program Files\maven3\repository\javax\servlet\servlet-api\2.5\servlet-api-2.5.jar;D:\Program Files\maven3\repository\javax\servlet\jsp\jsp-api\2.1\jsp-api-2.1.jar;D:\Program Files\maven3\repository\org\glassfish\web\jstl-impl\1.2\jstl-impl-1.2.jar;D:\Program Files\maven3\repository\jexcelapi\jxl\2.4.2\jxl-2.4.2.jar;D:\Program Files\maven3\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DongFufa"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_212\jre"/>
+    <property name="basedir" value="G:\hs2021\code\jkssm"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\DongFufa\AppData\Local\Temp\surefire8703107032520149099\surefirebooter7007412668755734973.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_212\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_212-b10"/>
+    <property name="user.name" value="DongFufa"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="D:\Program Files\maven3\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DongFufa\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.2.2"/>
+    <property name="java.version" value="1.8.0_212"/>
+    <property name="user.dir" value="G:\hs2021\code\jkssm"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NetSarang\Xshell 6\;C:\Program Files (x86)\NetSarang\Xftp 6\;G:\Qt\Qt5.12.2\5.12.2\mingw73_32\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_212\bin;D:\Program Files\maven3\bin;D:\Program Files\gradle\gradle-5.6\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;G:\machine_learning\ide\anaconda3;G:\machine_learning\ide\anaconda3\Library\mingw-w64\bin;G:\machine_learning\ide\anaconda3\Library\usr\bin;G:\machine_learning\ide\anaconda3\Library\bin;G:\machine_learning\ide\anaconda3\Scripts;C:\Program Files (x86)\Graphviz2.38\bin;C:\Program Files\MongoDB\Server\3.2\bin;G:\bigData\develop\soft\protobuf\protobuf-2.5.0\src;G:\bigData\develop\soft\cmake\cmake-3.13.3-win64-x64\bin;G:\bigData\develop\modules\PortableGit\bin;G:\bigData\develop\soft\apache-ant-1.9.9\bin;C:\Program Files (x86)\MSBuild\12.0\Bin;G:\bigData\develop\modules\hadoop-2.9.2\bin;g:\Program Files\MATLAB\R2018b\runtime\win64;g:\Program Files\MATLAB\R2018b\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\IDM Computer Solutions\UltraCompare;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit;C:\Users\DongFufa\scoop\shims;C:\Program Files\Microsoft VS Code\bin;d:\Program Files\JetBrains\CLion 2019.1.2\bin;C:\Users\DongFufa\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Nmap;C:\Users\DongFufa\AppData\Roaming\npm;C:\Users\DongFufa\AppData\Local\Programs\APICloud Studio 3\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.212-b10"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="D:\Program Files\maven3\repository"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="findPage" classname="service.FactoryServiceTest" time="1.458">
+    <error message="&#10;### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;-10,10&apos; at line 5&#10;### The error may exist in file [G:\hs2021\code\jkssm\target\classes\mapper\FactoryMapper.xml]&#10;### The error may involve com.jk.dao.FactoryDao.findPage-Inline&#10;### The error occurred while setting parameters&#10;### SQL: select                   factory_id, full_name, factory_name, contacts, phone, mobile, fax, cnote, inspector, order_no, state, create_by, create_dept, create_time               from factory_c limit -10,10&#10;### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;-10,10&apos; at line 5&#10;; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near &apos;-10,10&apos; at line 5" type="org.springframework.jdbc.BadSqlGrammarException">org.springframework.jdbc.BadSqlGrammarException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+### The error may exist in file [G:\hs2021\code\jkssm\target\classes\mapper\FactoryMapper.xml]
+### The error may involve com.jk.dao.FactoryDao.findPage-Inline
+### The error occurred while setting parameters
+### SQL: select                   factory_id, full_name, factory_name, contacts, phone, mobile, fax, cnote, inspector, order_no, state, create_by, create_dept, create_time               from factory_c limit -10,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+	at service.FactoryServiceTest.findPage(FactoryServiceTest.java:26)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+	at service.FactoryServiceTest.findPage(FactoryServiceTest.java:26)
+</error>
+    <system-err><![CDATA[log4j:WARN No appenders could be found for logger (org.springframework.test.context.junit4.SpringJUnit4ClassRunner).
+log4j:WARN Please initialize the log4j system properly.
+]]></system-err>
+  </testcase>
+  <testcase name="find" classname="service.FactoryServiceTest" time="0.071"/>
+</testsuite>

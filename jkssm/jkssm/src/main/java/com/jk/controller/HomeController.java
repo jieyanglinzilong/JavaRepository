@@ -62,12 +62,22 @@ public class HomeController {
             return "/index.jsp";
         }else {
             if(user.getSuperUser().equals(1)){
-                return "forward:/sysadminMain.action";
+                return "forward:/fmain.action";
             }else {
                 return "forward:/fmain.action";
             }
         }
 
+    }
+    //基础信息
+    @RequestMapping("/baseinfoLeft.action")
+    public String baseinfoLeft(){
+        return "/baseinfo/left.jsp";
+    }
+
+    @RequestMapping("/baseinfoMain.action")
+    public String baseinfoMain(){
+        return "/baseinfo/main.jsp";
     }
 
 }
