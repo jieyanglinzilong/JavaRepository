@@ -57,7 +57,7 @@ public class UserController {
         //2.普通用户：/home/fmain.jsp
         //3.用户名密码出错：/index.jsp
         User user=userService.UserLogin(userName,password);
-        System.out.println(userName +" "+password);
+
         if(user.getUserId().equals("-1")||user.getUserId().equals("-2")){
             return "/index.jsp";
         }else {
@@ -68,6 +68,16 @@ public class UserController {
             }
         }
 
+    }
+    //基础信息
+    @RequestMapping("/baseinfoLeft.action")
+    public String baseinfoLeft(){
+        return "/baseinfo/left.jsp";
+    }
+
+    @RequestMapping("/baseinfoMain.action")
+    public String baseinfoMain(){
+        return "/baseinfo/main.jsp";
     }
 
 
