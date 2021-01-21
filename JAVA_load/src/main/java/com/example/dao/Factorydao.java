@@ -7,4 +7,5 @@ import java.util.List;
 public interface Factorydao {
     List<Factory> findAllEntities();
     List<Factory> findPage();
+    void deleteById(String id);
 }

@@ -30,4 +30,13 @@
         <include refid="Base_Column_List"/>
         from factory_c
     </select>
+    <!-- 删除一条 -->
+    <delete id="deleteById" parameterType="string">
+		delete from factory_c
+		where FACTORY_ID=#{id}
+	</delete>
+
+
+
+
 </mapper>

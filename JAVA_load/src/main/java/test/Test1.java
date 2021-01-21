@@ -4,8 +4,7 @@ import com.example.Page.Page;
 import com.example.domin.Factory;
 import com.example.service.FactoryService;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
+
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -30,11 +29,6 @@ public class Test1 {
     @Test
     public void batch(){
         Integer page=1;
-        PageHelper.startPage(page,3);
-        ApplicationContext ac=new ClassPathXmlApplicationContext("classpath:application.xml");
-        FactoryService factoryService=(FactoryService)ac.getBean("FactoryService");
-        List<Factory> factoryList=factoryService.findall();
-        PageInfo pageInfo=new PageInfo(factoryList);
 
     }
     @Test

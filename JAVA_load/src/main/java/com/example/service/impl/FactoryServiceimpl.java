@@ -33,5 +33,11 @@ public class FactoryServiceimpl implements FactoryService {
         return page;
     }
 
+    @Override
+    public void delete(String factoryId) {
+        factorydao.deleteById(factoryId);
+
+    }
+
 
 }

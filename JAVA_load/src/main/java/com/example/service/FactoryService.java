@@ -11,4 +11,6 @@ import java.util.List;
 public interface FactoryService {
     List<Factory> findall();
     Page findPage(Page page);
+
+    void delete(String factoryId);
 }

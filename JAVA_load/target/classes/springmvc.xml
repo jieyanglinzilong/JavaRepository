@@ -17,7 +17,7 @@
     <context:component-scan base-package="com.example">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
     </context:component-scan>
-
+    <mvc:default-servlet-handler />
 
     <!--配置jsp的视图解析器对象-->
     <!-- 2. 内部资源视图解析器 -->

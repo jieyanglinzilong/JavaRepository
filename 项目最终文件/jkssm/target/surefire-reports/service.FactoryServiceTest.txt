@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: service.FactoryServiceTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.76 s <<< FAILURE! - in service.FactoryServiceTest
+findPage(service.FactoryServiceTest)  Time elapsed: 1.458 s  <<< ERROR!
+org.springframework.jdbc.BadSqlGrammarException: 
+
+### Error querying database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+### The error may exist in file [G:\hs2021\code\jkssm\target\classes\mapper\FactoryMapper.xml]
+### The error may involve com.jk.dao.FactoryDao.findPage-Inline
+### The error occurred while setting parameters
+### SQL: select                   factory_id, full_name, factory_name, contacts, phone, mobile, fax, cnote, inspector, order_no, state, create_by, create_dept, create_time               from factory_c limit -10,10
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+	at service.FactoryServiceTest.findPage(FactoryServiceTest.java:26)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10,10' at line 5
+	at service.FactoryServiceTest.findPage(FactoryServiceTest.java:26)
+
