@@ -1,6 +1,8 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
+
 <%@ include file="../../baselist.jsp" %>
-<%@ page isELIgnored="false" %>
+<%@ page isELIgnored="false" %>;
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -16,7 +18,7 @@
                     <ul>
                         <li id="view"><a href="/jkssm/basicinfo/factory/list.action?pageNo=${page.pageNo}"
                                          onclick="formSubmit('toview.action','_self');this.blur();">查看</a></li>
-                        <li id="new"><a href="#" onclick="formSubmit('tocreate.action','_self');this.blur();">新增</a>
+                        <li id="new"><a href="#" onclick="add();this.blur();">新增</a>
                         </li>
                         <li id="update"><a href="#" onclick="formSubmit('toupdate.action','_self');this.blur();">修改</a>
                         </li>
@@ -48,7 +50,7 @@
                 <table id="ec_table" class="tableRegion" width="98%">
                     <thead>
                     <tr>
-                        <td class="tableHeader"><input type="checkbox" name="selid" onclick="checkAll('id',this)"></td>
+                        <td class="tableHeader"><input type="checkbox" name="selid" onclick="checkAll('id',this)"  /></td>
                         <td class="tableHeader">序号</td>
                         <td class="tableHeader">厂家全称</td>
                         <td class="tableHeader">缩写</td>
@@ -65,7 +67,7 @@
                     <c:forEach items="${page.results}" var="o" varStatus="status">
                         <tr class="odd" onmouseover="this.className='highlight'" onmouseout="this.className='odd'">
                             <td><input type="checkbox" name="id" value="${o.factoryId}"
-                                       onclick="selectid(${o.factoryId}, this)"/></td>
+                                       onclick="selectid(${o.factoryId},this)"/></td>
                             <td>${status.index+1}</td>
                             <td><a href="toview.action?id=${o.factoryId}">${o.fullName}</a></td>
                             <td>${o.factoryName}</td>
@@ -78,7 +80,14 @@
                                 <c:if test="${o.state==1}"><a href="stop.action?id=${o.factoryId}"><font color="green">启用</font></a></c:if>
                                 <c:if test="${o.state==0}"><a href="start.action?id=${o.factoryId}">停用</a></c:if>
                             </td>
-                            <td><a href="delete.action?factoryId=${o.factoryId}">删除</a></td>
+                            <td><a href="delete.action?factoryId=${o.factoryId}">删除</a>
+
+
+
+                            </td>
+							<td>
+                                <a href="toModify.action?factoryId=${o.factoryId}">修改</a>
+                            </td>
                         </tr>
                     </c:forEach>
                     </tbody>
@@ -91,24 +100,46 @@
 </body>
 <script type="text/javascript">
 	ids=[];
-	function selectid(id, obj){
-		if(obj.checked){
-			ids.push(id);
-		}else {
-			for(var i=0;i<ids.length;i++){
-				if(ids[i]==id){
-					ids.splice(i,1);
-				}
-			}
-		}
-	};
+    function selectid(id, obj){
+        alert("hello");
+        if(obj.checked){
+            ids.push(id);
+        }else {
+            for(var i=0;i<ids.length;i++){
+                if(ids[i]==id){
+                    ids.splice(i,1);
+                }
+            }
+        }
+    };
 	function deleteIds() {
 		if (ids.length == 0) {
-			window.alert("没有选中要删除的数据！");
+			window.alert("没有选中要删除的数据！"+ids);
 		} else {
-			formSubmit('deleteIds.action?ids='+ids,'_self');
+		    window.alert("删除数据");
+		    window.location.href="/jkssm/basicinfo/factory/deleteIds.action?ids="+ids;
+
 		}
 	};
+	function  add() {
+	    window.alert("添加数据");
+	    window.location.href="/jkssm/basicinfo/factory/tocreate.action";
+
+    };
+	function check(id) {
+
+	    if(document.icform.checkin.checked==true){
+            alert("你点了取消");
+        }
+	    else{
+	        alert("没有取消"+id);
+        }
+
+
+    };
+	function help_call(id) {
+        alert("回调"+id);
+    };
 </script>
 </html>
 

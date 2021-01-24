@@ -11,6 +11,10 @@ import java.util.List;
 public interface FactoryService {
     List<Factory> findall();
     Page findPage(Page page);
-
+    public void add(Factory factory);
     void delete(String factoryId);
+    void deleteIds(String[] ids);
+    Factory get(String id);
+    void save(Factory factory);
+    public Factory findById(String factoryId);
 }

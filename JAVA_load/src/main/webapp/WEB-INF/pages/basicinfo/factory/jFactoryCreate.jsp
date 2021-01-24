@@ -1,17 +1,20 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@ include file="../../base.jsp"%>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
 </head>
 <body>
-<form method="post">
+<form method="post"  action="insert.action">
 	<div id="menubar">
 		<div id="middleMenubar">
 			<div id="innerMenubar">
 				<div id="navMenubar">
 					<ul>
-						<li id="save"><a href="#" onclick="formSubmit('insert.action','_self');">确定</a></li>
+
+						<!--<li id="save"><a href="#" onclick=window.location.href="insert.action？factory="+'_self';>确定</a></li>-->
 						<li id="back"><a href="list.action">返回</a></li>
 					</ul>
 				</div>
@@ -52,7 +55,7 @@
 						<td class="columnTitle_mustbe">验货员：</td>
 						<td class="tableContent"><input type="text" name="inspector"/></td>
 						<td class="columnTitle_mustbe">排序号：</td>
-						<td class="tableContent"><input type="text" name="orderNo"/></td>
+						<td class="tableContent"><input type="number" name="orderNo"/></td>
 					</tr>
 					<tr>
 						<td class="columnTitle_mustbe">备注：</td>
@@ -62,7 +65,16 @@
 			</div>
 		</div>
 	</div>
+	<input  type="submit" value="确定">
 </form>
+<script type="text/javascript">
+	function  add() {
+		window.alert("添加数据");
+
+
+	};
+
+</script>
 </body>
 </html>
 

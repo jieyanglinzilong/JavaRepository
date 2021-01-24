@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jk.dao.FactoryDao">
+    <resultMap id="baseResultMap" type="com.jk.domain.Factory">
+        <id column="factory_id" property="factoryId" javaType="java.lang.String"></id>
+        <result column="full_name" property="fullName" javaType="java.lang.String"></result>
+        <result column="factory_name" property="factoryName" javaType="java.lang.String"></result>
+        <result column="contacts" property="contacts" javaType="java.lang.String"></result>
+        <result column="phone" property="phone" javaType="java.lang.String"></result>
+        <result column="mobile" property="mobile" javaType="java.lang.String"></result>
+        <result column="fax" property="fax" javaType="java.lang.String"></result>
+        <result column="cnote" property="cnote" javaType="java.lang.String"></result>
+        <result column="inspector" property="inspector" javaType="java.lang.String"></result>
+        <result column="order_no" property="orderNo" javaType="java.lang.Integer"></result>
+        <result column="state" property="state" javaType="java.lang.Integer"></result>
+        <result column="create_by" property="createBy" javaType="java.lang.String"></result>
+        <result column="create_dept" property="createDept" javaType="java.lang.String"></result>
+        <result column="create_time" property="createTime" javaType="java.lang.String"></result>
+    </resultMap>
+    <sql id="Base_Column_List" >
+        factory_id, full_name, factory_name, contacts, phone, mobile, fax, cnote, inspector, order_no, state, create_by, create_dept, create_time
+    </sql>
+    <sql id="findWhere">
+        <where >
+            <if test="factoryId != null and factoryId !='' " >
+                AND factory_id = #{factoryId}
+            </if>
+            <if test="fullName != null and fullName !='' " >
+                AND full_name = #{fullName}
+            </if>
+            <if test="factoryName != null and factoryName !='' " >
+                AND factory_name = #{factoryName}
+            </if>
+            <if test="contacts != null and contacts !='' " >
+                AND contacts = #{contacts}
+            </if>
+            <if test="phone != null and phone !='' " >
+                AND phone = #{phone}
+            </if>
+            <if test="mobile != null and mobile !='' " >
+                AND mobile = #{mobile}
+            </if>
+            <if test="fax != null and fax !='' " >
+                AND fax = #{fax}
+            </if>
+            <if test="cnote != null and cnote !='' " >
+                AND cnote = #{cnote}
+            </if>
+            <if test="inspector != null and inspector !='' " >
+                AND inspector = #{inspector}
+            </if>
+            <if test="orderNo != null " >
+                AND order_no = #{orderNo}
+            </if>
+            <if test="state != null " >
+                AND state = #{state}
+            </if>
+            <if test="createBy != null and createBy !='' " >
+                AND create_by = #{createBy}
+            </if>
+            <if test="createDept != null and createDept !='' " >
+                AND create_dept = #{createDept}
+            </if>
+        </where>
+    </sql>
+    <select id="findAllEntities" resultMap="baseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+         from factory_c
+    </select>
+    <select id="findEntitiesByCritical" resultMap="baseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from factory_c
+        <include refid="findWhere"/>
+    </select>
+
+    <!-- 查询 -->
+    <select id="find" parameterType="map" resultMap="baseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+         from factory_c
+        <include refid="findWhere"/>
+    </select>
+    <select id="findPage" parameterType="com.jk.pagination.Page" resultMap="baseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from factory_c
+    </select>
+
+    <!-- 查询一个 -->
+    <select id="get" parameterType="string" resultMap="baseResultMap">
+		select
+		<include refid="Base_Column_List"/>
+		from factory_c
+		where factory_id = #{id}
+	</select>
+
+
+    <insert id="insert" parameterType="com.jk.domain.Factory">
+		insert into factory_c
+		(FACTORY_ID,FULL_NAME,FACTORY_NAME,CONTACTS,PHONE,MOBILE,FAX,CNOTE,INSPECTOR,ORDER_NO,STATE,CREATE_BY,CREATE_DEPT,CREATE_TIME)
+		values
+		(	#{factoryId, jdbcType=VARCHAR},
+			#{fullName, jdbcType=VARCHAR},
+			#{factoryName, jdbcType=VARCHAR},
+			#{contacts, jdbcType=VARCHAR},
+			#{phone, jdbcType=VARCHAR},
+			#{mobile, jdbcType=VARCHAR},
+			#{fax, jdbcType=VARCHAR},
+			#{cnote, jdbcType=VARCHAR},
+			#{inspector, jdbcType=VARCHAR},
+			#{orderNo, jdbcType=INTEGER},
+			#{state, jdbcType=VARCHAR},
+			#{createBy, jdbcType=VARCHAR},
+			#{createDept, jdbcType=VARCHAR},
+			#{createTime, jdbcType=TIMESTAMP}
+		)
+	</insert>
+
+    <!-- 修改 动态SQL语句 -->
+    <update id="update" parameterType="com.jk.domain.Factory">
+        update factory_c
+        <set>
+            <if test="fullName != null">FULL_NAME=#{fullName, jdbcType=VARCHAR},</if>
+            <if test="factoryName != null">FACTORY_NAME=#{factoryName, jdbcType=VARCHAR},</if>
+            <if test="contacts != null">CONTACTS=#{contacts, jdbcType=VARCHAR},</if>
+            <if test="phone != null">PHONE=#{phone, jdbcType=VARCHAR},</if>
+            <if test="mobile != null">MOBILE=#{mobile, jdbcType=VARCHAR},</if>
+            <if test="fax != null">FAX=#{fax, jdbcType=VARCHAR},</if>
+            <if test="cnote != null">CNOTE=#{cnote, jdbcType=VARCHAR},</if>
+            <if test="inspector != null">INSPECTOR=#{inspector, jdbcType=VARCHAR},</if>
+            <if test="orderNo != null">ORDER_NO=#{orderNo, jdbcType=INTEGER},</if>
+            <if test="state != null">STATE=#{state, jdbcType=VARCHAR},</if>
+            <if test="createTime !=null and createTime != ''">createTime=#{createTime, jdbcType=DATE}</if>
+        </set>
+        where FACTORY_ID=#{factoryId}
+    </update>
+    <!-- 删除一条 -->
+    <delete id="deleteById" parameterType="string">
+		delete from factory_c
+		where FACTORY_ID=#{id}
+	</delete>
+
+    <!-- 删除多条（一维字符串数组） -->
+    <delete id="delete" parameterType="string">
+        delete from factory_c
+        where FACTORY_ID in
+        <foreach collection="array" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>
